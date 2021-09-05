@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Nathalie Bazzon, Lina Amaral, Carlos Júnior, Evelyn Mota e Andressa Samara">
+    <title>Cine SoulCode</title>
+</head>
+
+<style>
+        * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 45px;
+
+    }
+
+    header {
+        min-height: 100px;
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        border-bottom: 10px solid #ccc;
+        background: #212121;
+        z-index: 10;
+    }
+
+    body {
+        font-family: arial, helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #363636;
+        text-align: center;
+        color: #ccc;
+    }
+
+    .menu {
+        list-style: none;
+        border: 1px solid #c0c0c0 ;
+        float: left;
+
+    }
+
+    /*Aqui o menu passa de vertical para Horizontal, quem faz isso é o left*/
+    .menu li {
+        position: relative;
+        float: left;
+        border-right: 1px solid #c0c0c0;
+    }
+
+    /*estilização do menu, text-shadow e box-shadow é para quando passarmos o mouse mudar o estilo*/
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        display: block;
+    }
+
+    .menu li a:hover {
+        background: rgba(51, 51, 51, 0.219);
+        color: #fff;
+        -moz-box-shadow: 0 3px 10px 0 #ccc;
+        -webkit-box-shadow: 0 3px 10px 0 #ccc;
+        text-shadow: 0px 0px 5px #fff;
+    }
+
+    /*aqui escondemos o submenu*/
+    .menu li ul {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+
+    /*fazendo o submenu aparecer*/
+    .menu li:hover ul,
+    .menu li.over ul {
+        display: block;
+    }
+
+    /*mais alguns ajuste do menu, deixa eles em caixinhas sem os bullets*/
+    .menu li ul li {
+        border: 1px solid #c0c0c0;
+        display: block;
+        width: 150px;
+    }
+
+    img {
+        border-radius: 20px
+    }
+</style>
+
+<body>
+
+    <header background=Imagem1.jpg>
+
+        <h1 style="color:gold; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">Cine
+            SoulCode</h1>
+
+        <nav>
+            <ul class="menu">
+                 <li><a href="ação.html">AÇÃO</a></li>
+                 <li><a href="terror.html">TERROR</a></li>
+                 <li><a href="animaçao.html">ANIMAÇÃO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <MAIN>
+
+        <section>
+            <table style="width: 100%; text-align: center; border-spacing: 3mm;">
+                <tr>
+                    <td>
+                        <h3> EM BREVE</h3>
+                        <a href="#"><img src="abe.jpg" alt="Confira o que chegará em breve nos cinemas" width="200"></a>
+                        <figcaption>Deixe aqui sua crítica do filme</figcaption>
+                    </td>
+
+                    <td>
+                        <h3>LANÇAMENTO DA SEMANA</h3>
+                        <a href="https://www.youtube.com/watch?v=gmRKv7n2If8&ab_channel=WaltDisneyStudios">
+                            <img src="cruela.jpg" alt="Lançamento" width="200"></a>
+                        <figcaption>Confira a estreia da semana!</figcaption>
+                    </td>
+
+                    <td>
+                        <h3>PREMIAÇÕES</h3>
+                        <a href="https://www.bbc.com/portuguese/internacional-56884979" target="_blanck"><img
+                                src="oscar.png" alt="Oscar" width="200"></a>
+                        <figcaption>Acompanhe as premiações e <br>tudo o que tem acontecido no tapete da fama
+                        </figcaption>
+                        <h3></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <a href="Cadastre-se.html"><img src="cadastro-cadastro.png" alt="Cadastre-se" width="100"></a>
+                            <figcaption>Cadastre-se</figcaption>
+                        </figure>
+                    </td>
+
+                    <td>
+                        <figure>
+                            <a href="Fale conosco.html"><img src="fale-conosco.png" alt="Fale conosco" width="100"></a>
+                            <figcaption>Fale Conosco</figcaption>
+                        </figure>
+                    </td>
+
+                    <td>
+                        <figure>
+                            <a href="https://www.instagram.com/cinemarkoficial/" target="_blanck">
+                                <img src="instagram1.png" alt="instagram" width="120"></a>
+                            <figcaption>Siga-nos no Instagram</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+    </MAIN>
+
+
+    <footer style="padding: 25px;">
+        <p>Copyright © 2021 Cine SoulCode</p>
+    </footer>
+
+
+</body>
+
+</html>

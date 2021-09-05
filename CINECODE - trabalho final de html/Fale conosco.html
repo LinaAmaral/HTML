@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale conosoco</title>
+</head>
+
+<body>
+  <style>
+    body {
+        font-family: arial, helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #363636;
+        color: white;
+    }
+    h2 {
+      text-align: center;
+      color: gold;
+      margin: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h4 {
+      text-align: center;
+      color: #ccc;
+      margin: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    input[type=text] {
+      background-color: rgb(201, 207, 209);
+      color: black;
+      width: 100%;
+      padding: 5px;
+      margin: 5px;
+      box-sizing: border-box;
+      border: 2px solid #555;
+    }
+
+    input[type=email] {
+      background-color: rgb(201, 207, 209);
+      color: black;
+      width: 100%;
+      padding: 5px;
+      margin: 5px;
+      box-sizing: border-box;
+      border: 2px solid #555;
+    }
+
+    input[type=date] {
+      background-color: rgb(201, 207, 209);
+      color: black;
+      width: 100%;
+      padding: 5px;
+      margin: 5px;
+      box-sizing: border-box;
+      border: 2px solid #555;
+    }
+
+    input[type=tel] {
+      background-color: rgb(201, 207, 209);
+      color: black;
+      width: 100%;
+      padding: 5px;
+      margin: 5px;
+      box-sizing: border-box;
+      border: 2px solid #555;
+    }
+
+    button {
+      background: rgb(201, 207, 209);
+      border-radius: 5px;
+      color: black;
+      font-family: Verdana;
+      font-size: 12px;
+      font-weight: 10px;
+      padding: 10px;
+      border: solid #555 2px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+
+  <h2>Ficou com alguma dúvida?<br>Teremos um grande prazer em ajudá-lo!</h2>
+  <h4>Entre em contato com a nossa central de atendimento pelo número +55 41 3364-0168 ou nos envie uma mensagem:</h4>
+
+  <form id="formulario" autocomplete="off">
+    <fieldset>
+      <table>
+        <tr>
+          <td>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" />
+          </td>
+        </tr>
+        <br>
+        <tr height="50px">
+          <td>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" />
+
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" />
+          </td>
+        </tr>
+        <br>
+
+        <div>
+          <tr height="50px">
+            <td>
+              <label for="assunto">Escolha o assunto:</label>
+              <select name="assunto">
+                <option value="atendimento_bilheteria">Atendimento na bilheteria</option>
+                <option value="horários">Horários</option>
+                <option value="sugestões">Sugestões</option>
+                <option value="dúvidas">Dúvidas</option>
+              </select>
+
+              <input type="radio" id="cliente" name="cliente" value="sim">
+              <label for="sim">Já sou cliente</label>
+
+              <input type="radio" id="n_cliente" name="cliente" value="nao">
+              <label for="nao">Primeiro contato</label>
+            </td>
+          </tr>
+        </div>
+        <br>
+        <tr height="50px">
+          <td rowspan="2">
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg"></textarea>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <div>
+        <button type="submit">Enviar mensagem</button>
+        <button type="reset">Limpar formulário</button>
+        <button type="submit"><a href="index.html">Voltar</a></button>
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
